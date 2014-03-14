@@ -44,6 +44,10 @@ class Viera(object):
         for digit in str(number):
             self._sendkey('NRC_D%s-ONOFF' % digit)
 
+    def nrc(self,NRC_CMD):
+		if 'NRC_' in NRC_CMD:
+			self._sendkey(NRC_CMD)
+
 class Action(object):
     def __init__(self, name, arguments):
         self.name = name
