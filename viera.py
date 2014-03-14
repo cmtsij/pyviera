@@ -31,6 +31,12 @@ class Viera(object):
     def vol_down(self):
         self._sendkey('NRC_VOLDOWN-ONOFF')
 
+    def channel_up(self):
+        self._sendkey('NRC_CH_UP-ONOFF')
+
+    def channel_down(self):
+        self._sendkey('NRC_CH_DOWN-ONOFF')
+
     def mute(self):
         self._sendkey('NRC_MUTE-ONOFF')
 
